@@ -17,6 +17,12 @@ public class ex2 {
          */
         sendMessage(new EnglishMessage());//polymorphism
         sendMessage(new FrenchMessage());//polymorphism
+//        sendMessage(new Message() {
+//            @Override
+//            public void sendMessage() {
+//                System.out.println("Sending msg in sanskrit");
+//            }
+//        });
         sendMessage(
             () ->{//called as lambda expression
                 System.out.println("Sending the message in sanskrit");
